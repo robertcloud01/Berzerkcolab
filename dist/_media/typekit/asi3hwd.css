@@ -1,0 +1,22 @@
+/*
+ * The Typekit service used to deliver this font or fonts for use on websites
+ * is provided by Adobe and is subject to these Terms of Use
+ * http://www.adobe.com/products/eulas/tou_typekit. For font license
+ * information, see the list below.
+ *
+ * beachwood-variable:
+ *   - http://typekit.com/eulas/000000000000000077372279
+ *
+ * © 2009-2026 Adobe Systems Incorporated. All Rights Reserved.
+ */
+/*{"last_published":"2026-05-07 20:24:18 UTC"}*/
+
+
+
+@font-face {
+font-family:"beachwood-variable";
+src:url("/_media/typekit/beachwood.woff2") format("woff2"),url("/_media/typekit/beachwood.woff") format("woff"),url("/_media/typekit/beachwood.otf") format("opentype");
+font-display:auto;font-style:normal;font-weight:200 900;font-stretch:normal;
+}
+
+.tk-beachwood-variable { font-family: "beachwood-variable",sans-serif; }

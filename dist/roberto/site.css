@@ -1,0 +1,34 @@
+/* Roberto Pereira: campaign artwork retains the original site's motion system. */
+html[data-rp-route="/on-field"] :is([data-section="on-career"],[data-section="on-pace"],[data-section="on-total-yards"],[data-section="on-stats"],[data-section="on-records"],[data-section="on-influence"]){display:none!important}
+.rp-catalog{position:relative;padding:clamp(76px,10vw,160px) max(24px,5vw);background:#0b0a0f;color:#f0e4d4;isolation:isolate}
+.rp-catalog:before{position:absolute;inset:0;content:"";opacity:.09;pointer-events:none;background:url('/textures/pebble.webp')}
+.rp-catalog-head{position:relative;display:flex;align-items:end;justify-content:space-between;gap:32px;margin-bottom:36px}
+.rp-eyebrow{font-family:var(--font-mono-family),monospace;letter-spacing:.15em;font-size:11px;text-transform:uppercase;color:#a99eae;margin-bottom:18px}
+.rp-catalog h2{font-family:"beachwood-variable",Impact,sans-serif;font-size:clamp(48px,7vw,112px);line-height:.9;font-weight:700;letter-spacing:-.025em;max-width:900px;margin:0}
+.rp-catalog-intro{font-size:15px;line-height:1.6;max-width:310px;color:#baafbd;margin:0}
+.rp-filters{display:flex;gap:8px;margin:35px 0 30px;position:relative;flex-wrap:wrap}
+.rp-filter{background:transparent;border:1px solid #514653;color:#f0e4d4;border-radius:999px;padding:11px 22px;font-size:11px;font-family:var(--font-mono-family),monospace;letter-spacing:.07em;text-transform:uppercase;cursor:pointer;transition:background .25s,color .25s,border-color .25s}
+.rp-filter[aria-pressed="true"]{background:#f0e4d4;color:#171220;border-color:#f0e4d4}
+.rp-filter:focus-visible,.rp-product:focus-visible{outline:3px solid #d8c14a;outline-offset:5px}
+.rp-product-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px 24px;position:relative}
+.rp-product{display:block;color:inherit;text-decoration:none;min-width:0}
+.rp-product[hidden]{display:none}
+.rp-product-photo{position:relative;aspect-ratio:3/3.85;background:#e8e7e4;overflow:hidden;border-radius:3px}
+.rp-product-photo img{width:100%;height:100%;object-fit:contain;transition:transform .7s cubic-bezier(.22,1,.36,1);display:block;mix-blend-mode:multiply}
+.rp-product:hover img{transform:scale(1.055)}
+.rp-product-num{position:absolute;top:16px;left:18px;color:#3e3740;z-index:2;font-family:var(--font-mono-family),monospace;font-size:10px;letter-spacing:.12em}
+.rp-product-arrow{position:absolute;right:16px;bottom:16px;width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:#171220;color:#f0e4d4;font-size:23px;transition:transform .3s}
+.rp-product:hover .rp-product-arrow{transform:rotate(-35deg)}
+.rp-product-meta{padding:18px 1px 0;display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.rp-product-meta h3{font-family:"beachwood-variable",Impact,sans-serif;font-size:clamp(25px,2.5vw,39px);line-height:1;margin:0;font-weight:600}
+.rp-product-meta span{font-family:var(--font-mono-family),monospace;font-size:9px;letter-spacing:.06em;text-transform:uppercase;color:#bcb0ba;white-space:nowrap}
+.rp-catalog-note{font-family:var(--font-mono-family),monospace;color:#a89ca9;font-size:10px;line-height:1.6;margin-top:32px;max-width:650px}
+@media(max-width:760px){.rp-catalog-head{display:block}.rp-catalog-intro{margin-top:22px;max-width:100%}.rp-product-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 12px}.rp-product-meta{display:block}.rp-product-meta h3{font-size:27px;margin-bottom:7px}.rp-product-meta span{font-size:8px}.rp-product-num{top:12px;left:12px}.rp-product-arrow{width:30px;height:30px;font-size:18px;right:10px;bottom:10px}}
+@media(prefers-reduced-motion:reduce){.rp-product-photo img,.rp-product-arrow{transition:none}}
+
+.rp-autograph{isolation:isolate;display:block;overflow:visible!important}.rp-autograph svg{display:block;overflow:visible;width:100%;height:100%;object-fit:contain}.rp-autograph-path{fill:currentColor;fill-opacity:.94;stroke:currentColor;stroke-width:.8;stroke-linecap:round;stroke-linejoin:round}.rp-autograph-visible .rp-autograph-path{stroke-dasharray:1000;animation:rp-signature-write 2.2s ease-out both}.rp-autograph-visible .rp-autograph-path+path{animation-delay:.25s}@keyframes rp-signature-write{0%{stroke-dashoffset:1000;fill-opacity:0}72%{stroke-dashoffset:0;fill-opacity:0}100%{stroke-dashoffset:0;fill-opacity:.94}}@media(prefers-reduced-motion:reduce){.rp-autograph-visible .rp-autograph-path{animation:none;fill-opacity:.94;stroke-dashoffset:0}}
+[data-section="hero-editorial"] .jj-hero-col p{line-height:1.43!important;overflow-wrap:normal;word-break:normal}.bg-layers__word{opacity:calc(max(.07,var(--marquee-opacity,0)) * (1 - var(--fdp,0)))}
+
+.bg-layers__word--justin{width:435.989267212435vh}.bg-layers__word--jefferson{width:417.56398167372913vh}
+
+[data-footer-panel-logo]>span{-webkit-mask-image:url("/roberto/brand/monogram.svg?rp=rp5")!important;mask-image:url("/roberto/brand/monogram.svg?rp=rp5")!important}
